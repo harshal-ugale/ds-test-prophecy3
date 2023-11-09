@@ -1,0 +1,180 @@
+{
+  "metainfo" : {
+    "migrationVersions" : {
+      "gemBuilderVersion" : "v1"
+    },
+    "codeGenConfiguration" : {
+      "editableConfig" : true
+    },
+    "id" : "1",
+    "uri" : "pipelines/pipeline-test-3",
+    "language" : "python",
+    "fabricId" : "6419",
+    "frontEndLanguage" : "sql",
+    "mode" : "batch",
+    "udfs" : {
+      "language" : "python",
+      "udfs" : [ ],
+      "functionPackageName" : "harshalcloudaeonnetteam.xyz.functions",
+      "sharedFunctionPackageNames" : [ "prophecy.spark_basic.functions", "prophecy.warehouse.functions" ]
+    },
+    "udafs" : {
+      "language" : "python",
+      "code" : ""
+    },
+    "configuration" : {
+      "common" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "oldCommon" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "fabrics" : { },
+      "instances" : { },
+      "selected" : "default",
+      "nonEditable" : [ ],
+      "isSubscribedPipelineWithPipelineConfigs" : false
+    },
+    "sparkConf" : [ ],
+    "hadoopConf" : [ ],
+    "codeMode" : "sparse",
+    "buildSystem" : "maven",
+    "externalDependencies" : [ ],
+    "dependentProjectExternalDependencies" : [ {
+      "projectUID" : "12654",
+      "projectName" : "ProphecySparkBasicsPython",
+      "externalDependencies" : [ ]
+    }, {
+      "projectUID" : "12655",
+      "projectName" : "ProphecyWarehousePython",
+      "externalDependencies" : [ ]
+    } ],
+    "isImported" : false,
+    "interimMode" : "Full",
+    "interimModeEnabled" : true,
+    "visualCodeInterimMode" : "Disabled",
+    "recordsLimit" : {
+      "enabled" : false,
+      "value" : 1000
+    },
+    "topLevelPackage" : "pipelinetest3",
+    "configurationVersion" : "v1"
+  },
+  "connections" : [ {
+    "id" : "ysGDhF47LPaggAM1KtrKn",
+    "source" : "m7MPFgz-AfiAQe5gEICOq$$kAcSePkUyrQc8xuDAt5Kn",
+    "sourcePort" : "h2N6tMm9xEiQLEeeXMib5$$q6hq2Z7mlSe93YhthpehY",
+    "target" : "JeGAPp7lwwyyoY8pjeE7C$$IFQa9mR5QVnf5HrqtZEMf",
+    "targetPort" : "r7qf7g9UkmNDPxHSM2_-x$$mDWnHK90Jmxfm48t6KDdT"
+  } ],
+  "processes" : {
+    "m7MPFgz-AfiAQe5gEICOq$$kAcSePkUyrQc8xuDAt5Kn" : {
+      "id" : "m7MPFgz-AfiAQe5gEICOq$$kAcSePkUyrQc8xuDAt5Kn",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "Source_0",
+        "slug" : "Source_0",
+        "x" : -420,
+        "y" : -120,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "h2N6tMm9xEiQLEeeXMib5$$q6hq2Z7mlSe93YhthpehY",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : { }
+    },
+    "JeGAPp7lwwyyoY8pjeE7C$$IFQa9mR5QVnf5HrqtZEMf" : {
+      "id" : "JeGAPp7lwwyyoY8pjeE7C$$IFQa9mR5QVnf5HrqtZEMf",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "Target_1",
+        "slug" : "Target_1",
+        "x" : -40,
+        "y" : -100,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "r7qf7g9UkmNDPxHSM2_-x$$mDWnHK90Jmxfm48t6KDdT",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : { }
+    }
+  },
+  "ports" : {
+    "inputs" : [ ],
+    "outputs" : [ ],
+    "selectedInputFields" : [ ],
+    "isCustomOutputSchema" : false,
+    "autoUpdateOnRun" : false
+  },
+  "diagnostics" : [ {
+    "property" : "$.workflow.processes.m7MPFgz-AfiAQe5gEICOq$$kAcSePkUyrQc8xuDAt5Kn.properties.datasetId",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "dataset id missing",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.JeGAPp7lwwyyoY8pjeE7C$$IFQa9mR5QVnf5HrqtZEMf",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "One of the upstream gems is broken. Please, fix it first.",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.JeGAPp7lwwyyoY8pjeE7C$$IFQa9mR5QVnf5HrqtZEMf.properties.datasetId",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "dataset id missing",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  } ]
+}
